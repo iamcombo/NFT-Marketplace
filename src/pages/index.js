@@ -46,7 +46,7 @@ export default function Home() {
   if (!nfts.length) return <h1 className="px-20 py-10 text-xl">No items in marketplace</h1>
   return (
     <div className='max-w-screen-lg m-auto'>
-      <div className='grid grid-cols-3'>
+      <div className='grid grid-cols-3 gap-4'>
         { nfts.map((nft, i) => (
           <CardItem 
             key={i}
